@@ -1,8 +1,6 @@
 FROM alpine
 
-RUN apk add --update php-cli php-mysql php-mysqli php-pdo_mysql 
-
-VOLUME /www
+RUN apk add --update php-cli php-mysql php-mysqli php-pdo_mysql wget openssl
 
 EXPOSE 8080
 
